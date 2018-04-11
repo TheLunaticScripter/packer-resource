@@ -8,9 +8,8 @@ pkg_bin_dirs=(bin)
 pkg_description="Packer resource for Concourse CI."
 pkg_upstream_url="https://github.com/TheLunaticScripter/packer-resource"
 
-
 do_download() {
- return 0
+  return 0
 }
 
 do_build() {
@@ -18,5 +17,5 @@ do_build() {
 }
 
 do_install() {
- cp /src/bin -r /opt/resource
+  cp /src/bin -r /opt/resource
 }
